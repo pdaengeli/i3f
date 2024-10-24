@@ -18,7 +18,7 @@ jobs:
         GITHUB: ${{ toJson(github) }}
       with:
         notebook: "./generate-manifests.ipynb"
-        params: "./generate-manifests-params.json"
+        params: "./generate-manifests-params.yaml"
         isReport: False
         poll: True
     - uses: actions/upload-artifact@v3
