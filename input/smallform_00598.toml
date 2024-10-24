@@ -1,6 +1,6 @@
 mf_id = "smallform_00598.json"
 mf_lang = "en"
-mf_label = "Science in Exile. (Für "Washington Post".)"
+mf_label = "Science in Exile. (Für 'Washington Post'.)"
 
 [mf_data]
 "foo" = "https://www.monacensia-digital.de/i3f/v20/415208/info.json"
