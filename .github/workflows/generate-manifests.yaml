@@ -22,17 +22,18 @@ jobs:
         isReport: False
         poll: True
           # directory listing
+    - run: pwd
+    - run: ls -l
+    - run: mkdir presentation && mv ${{ RUNNER.temp }}/nb-runner/* presentation
     - name: Generate Directory Listings
       uses: jayanta525/github-pages-directory-listing@v4.0.0
       with:
-        FOLDER: ${{ RUNNER.temp }}/nb-runner #directory to generate index
-    - run: pwd
-    - run: ls -l
+        FOLDER: presentation #directory to generate index    
     - uses: actions/upload-pages-artifact@v3
       if: always()
       with:
         name: output
-        path: ${{ RUNNER.temp }}/nb-runner
+        path: presentation
       env:
         RUNNER: ${{ toJson(runner) }}
 
