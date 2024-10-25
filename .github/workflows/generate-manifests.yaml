@@ -6,9 +6,6 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-    - name: Create output folder
-      run: |
-        mkdir ~/work/_temp/nb-runner/presentation
     - uses: actions/checkout@v4
     - name: Set up Python
       uses: actions/setup-python@v5
