@@ -34,7 +34,7 @@ jobs:
       if: always()
       with:
         name: output
-        path: presentation
+        path: .
       env:
         RUNNER: ${{ toJson(runner) }}
 
