@@ -21,10 +21,11 @@ jobs:
         params: "./generate-manifests-params.json"
         isReport: False
         poll: True
-          # directory listing
-    - run: pwd
-    - run: ls -l
-    - run: mkdir presentation && mv ${{ RUNNER.temp }}/nb-runner/* presentation
+# directory listing
+    # - run: pwd
+    # - run: ls -l
+    - run: mkdir presentation && mv ${{ RUNNER.temp }}/nb-runner/presentation/* presentation
+    - run: mkdir debug && mv ${{ RUNNER.temp }}/nb-runner/* debug
     - name: Generate Directory Listings
       uses: jayanta525/github-pages-directory-listing@v4.0.0
       with:
@@ -61,4 +62,4 @@ jobs:
         with: 
           artifact_name: output
         
-# then publish manifests at iiif.annemarie-schwarzenbach.ch/presentation/
+# then publish manifests at iiif.annemarie-schwarzenbach.ch/i3f/presentation/
