@@ -36,3 +36,7 @@ mf_label = "{some title/label of document}"
 "{mf_id}_nnn" = "https://{iiif-server}/{path}/{identifier}/info.json"
 ```
 Note that double quotes are not allowed within values (use single quotes instead).
+
+## Development
+
+`ipynb` outputs may be accessed under `debug` (`debug/generate-manifests.html`, `debug/generate-manifests.ipynb`).
