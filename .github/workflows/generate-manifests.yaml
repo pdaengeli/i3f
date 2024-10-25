@@ -6,7 +6,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-    - name: Create folder
+    - name: Create output folder
       run: |
         mkdir ~/output
     - uses: actions/checkout@v3
