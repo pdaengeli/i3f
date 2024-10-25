@@ -26,6 +26,7 @@ jobs:
     # - run: ls -l
     - run: mkdir presentation && mv ${{ RUNNER.temp }}/nb-runner/presentation/* presentation
     - run: mkdir debug && mv ${{ RUNNER.temp }}/nb-runner/* debug
+    - run: ls -l
     - name: Generate Directory Listings
       uses: jayanta525/github-pages-directory-listing@v4.0.0
       with:
