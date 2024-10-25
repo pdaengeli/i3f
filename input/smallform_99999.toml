@@ -1,0 +1,7 @@
+mf_id = "smallform_99999.json"
+mf_lang = "en"
+mf_label = "Testing special characters (!:)"
+
+[mf_data]
+"Colon in URL" = "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digibok_2009070210001_0618/info.json"
+"Exclamation mark in URL" = "https://iiif.library.ethz.ch/iiif/2/e-periodica!zui!1938_014!zui-001_1938_014_0634.jpg/info.json"
