@@ -37,9 +37,21 @@ mf_label = "{some title/label of document}"
 ```
 Note that double quotes are not allowed within values (use single quotes instead).
 
-## Development
+## Contributing manifests
 
-`ipynb` outputs may be accessed under `debug` (`debug/generate-manifests.html`, `debug/generate-manifests.ipynb`).
+* [Create a new file](https://github.com/pdaengeli/i3f/new/main/input) and fill in the information needed (for more convenience use/modify the template).
+* Name the file according to the project convention
+* Select "Commit changes…"
+  <details><summary>🖼️</summary>
+  
+  ![image](https://github.com/user-attachments/assets/92beb3b7-9f10-4626-8c3b-82502c9cddef)
+  </details>
+* Enter extended description (optional), make sure to commit to directly to the `main` branch and click the button "Commit changes"
+  <details><summary>🖼️</summary>
+  
+  ![image](https://github.com/user-attachments/assets/0e8a00a8-c4cc-4e51-aab7-05f9130cdac9)
+  </details>
+* Wait for the generation of the manifest and check its availability/integrity.
 
 Manifests may be tested using
 
@@ -47,3 +59,7 @@ Manifests may be tested using
 * https://presentation-validator.iiif.io/validate?version=3.0&url= + manifest URL [programmatically]
 * https://uv-v4.netlify.app/#?manifest= + manifest URL [visually]
 * or other viewers (Mirador is known to be fickly at times)
+
+## Development
+
+`ipynb` outputs may be accessed under `debug` (`debug/generate-manifests.html`, `debug/generate-manifests.ipynb`).
