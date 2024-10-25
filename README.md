@@ -40,3 +40,10 @@ Note that double quotes are not allowed within values (use single quotes instead
 ## Development
 
 `ipynb` outputs may be accessed under `debug` (`debug/generate-manifests.html`, `debug/generate-manifests.ipynb`).
+
+Manifests may be tested using
+
+* https://presentation-validator.iiif.io/
+* https://presentation-validator.iiif.io/validate?version=3.0&url= + manifest URL [programmatically]
+* https://uv-v4.netlify.app/#?manifest= + manifest URL [visually]
+* or other viewers (Mirador is known to be fickly at times)
