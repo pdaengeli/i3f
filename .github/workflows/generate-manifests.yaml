@@ -26,8 +26,8 @@ jobs:
       if: always()
       with:
         name: output
-#        path: ${{ RUNNER.temp }}/nb-runner
-        path: ${{ RUNNER.temp }}/output
+        path: ${{ RUNNER.temp }}/nb-runner
+#        path: ${{ RUNNER.temp }}/output
       env:
         RUNNER: ${{ toJson(runner) }}
 
