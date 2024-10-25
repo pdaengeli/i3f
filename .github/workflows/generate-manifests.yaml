@@ -8,8 +8,8 @@ jobs:
     steps:
     - name: Create output folder
       run: |
-        mkdir ~/runner/work/_temp/nb-runner/presentation
-    - uses: actions/checkout@v3
+        mkdir ~/work/_temp/nb-runner/presentation
+    - uses: actions/checkout@v4
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
