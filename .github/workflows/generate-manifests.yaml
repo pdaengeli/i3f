@@ -25,7 +25,9 @@ jobs:
     - name: Generate Directory Listings
       uses: jayanta525/github-pages-directory-listing@v4.0.0
       with:
-        FOLDER: ${{ RUNNER.temp }}/nb-runner #directory to generate index  
+        FOLDER: ${{ RUNNER.temp }}/nb-runner #directory to generate index
+    - run: pwd
+    - run: ls -l
     - uses: actions/upload-pages-artifact@v3
       if: always()
       with:
